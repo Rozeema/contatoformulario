@@ -1,0 +1,103 @@
+
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d34dee;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h1,
+h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #490752;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.2;      
+}
+
+h1::before{
+    content; ;
+    display: block;    
+}
+
+h2::before{
+    content: ;
+    display: block; 
+}
+
+.form{
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;  
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button{
+    display: block;
+    width: 100%;     
+}
+    
+.form label{
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    }
+
+.form input,
+.form textarea{
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color;
+    box-shadow: 0.2s;
+   
+    }
+
+.form textarea{
+    min-height: 13rem; 
+    resize: vertical;
+        }
+
+.form input :hover,
+.form input:focus,
+.form textarea :hover,
+.form textarea :focus{
+  outline: none;
+  border-color: #45154e;
+  box-shadow: 0 0 0 3px #630875;
+  }
+
+.form button{
+  display: block;
+  padding: 1rem;
+  background: #b13cc9;
+  color: #490752;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+    }
+
+.form button :hover,
+.form button :focus{
+   outline: none; 
+   background: #df92ee;
+}
